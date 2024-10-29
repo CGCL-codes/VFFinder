@@ -1,0 +1,12 @@
+Task description:Your task is to identify the component phase from the provided description. The component phase refers to specific parts of the vulnerable software, such as a file/file path, function, class, or library, in the give description the software is {}.
+
+Requirement: Make sure your output are TOTALLY extracted from the original INPUT!if you can not find the corresponding value, just answer None!, Here are some examples:
+
+INPUT:A stack overflow in the XML.toJSONObject of hutool-json v5.8.10 allows attackers to cause a Denial of Service (DoS) via crafted JSON or XML data.
+OUTPUT:XML.toJSONObject
+
+INPUT:Archive.java in Junrar before 1.0.1, as used in Apache Tika, is affected by a denial of service vulnerability.
+OUTPUT:Archive.java
+
+INPUT:{}
+OUTPUT:
