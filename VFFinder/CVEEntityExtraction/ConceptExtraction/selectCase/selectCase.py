@@ -1,10 +1,10 @@
 
 import os.path
 import pickle
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.embedDes import embed_des
-from CVEEntityExtraction.ConceptExtractionRAG.datasetConstruction.constructGTDataset import convert_GT_obj_file
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.embedDes import embed_des
+from CVEEntityExtraction.ConceptExtraction.datasetConstruction.constructGTDataset import convert_GT_obj_file
 from stanfordcorenlp import StanfordCoreNLP
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.utils import cos_similarity
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.utils import cos_similarity
 
 
 def select_case(CVE_ID, description:str, embed_mode, nlp_model, component_dir, dataset_dir:str, k:int, vul_simi_model, vul_dict_dir):

@@ -3,13 +3,13 @@
 src_jar_GAV_dict = {}
 bin_jar_GAV_dict = {}
 
-with open("//data/alan/VFlocation/resource/CVE_jar", "r") as f:
+with open("/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVE_jar", "r") as f:
     GAV_list = [i.split("@")[-1].strip() for i in f.readlines()]
 
-with open("//data/alan/VFlocation/resource/CVE_jar", "r") as f:
+with open("/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVE_jar", "r") as f:
     CVE_GAV_dict = {i.split("@")[0].strip(): i.split("@")[-1].strip() for i in f.readlines()}
 
-with open("//data/alan/VFlocation/resource/CVE_jar", "r") as f:
+with open("/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVE_jar", "r") as f:
     GAV_CVE_dict = {}
     for i in f.readlines():
         GAV = i.split("@")[-1].strip()

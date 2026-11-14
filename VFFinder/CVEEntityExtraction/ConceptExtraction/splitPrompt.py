@@ -1,5 +1,5 @@
 
-from CVEEntityExtraction.ConceptExtractionRAG.selectCase.selectCase import select_case
+from CVEEntityExtraction.ConceptExtraction.selectCase.selectCase import select_case
 import json
 split_template = '''
 I want you to act like an expert in vulnerability report analysis, I will give you a description. Your task is to extract the attack vector and root cause from it. Attack vector is the method of triggering the vulnerability. If you can not find the corresponding answer, just answer None
