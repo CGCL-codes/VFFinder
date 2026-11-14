@@ -13,8 +13,8 @@ from CVEEntityExtraction.utils import save_cve_part_json
 from CVEEntityExtraction.utils import process_CVE_parts, process_ven_pro_ver, fullfill_AV_IM_RC, set_CVE_entity, split_part_entity, get_basic_component
 from stanfordcorenlp import StanfordCoreNLP
 import nltk
-from CVEEntityExtraction.ConceptExtractionRAG.splitPrompt import construct_split_query
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.utils import regulate_gpt_output, find_bracket_closure
+from CVEEntityExtraction.ConceptExtraction.splitPrompt import construct_split_query
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.utils import regulate_gpt_output, find_bracket_closure
 
 
 extract_vendor_product_version_prompt_template = '''
@@ -53,9 +53,9 @@ def extract_entity_by_parts(CVE_ID:str, CVE_description:str, CVE_CWE_dict:dict, 
 
     if extract_opt_dict["CoT"] == "RCAV_TMP":
         description_sentence_list = nltk.sent_tokenize(CVE_description)
-        basic_component_dir = "//data/alan/VFlocation/resource/CVETree/BasicComponent"
-        GT_dir = "//data/alan/VFlocation/CVEEntityExtraction/ConceptExtractionRAG/datasetConstruction/" + embed_mode
-        vul_dict_dir = "//data/alan/VFlocation/CVEEntityExtraction/ConceptExtractionRAG/embedDesUtil/baseVulDict/vulDict"
+        basic_component_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVETree/BasicComponent"
+        GT_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/CVEEntityExtraction/ConceptExtraction/datasetConstruction/" + embed_mode
+        vul_dict_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/CVEEntityExtraction/ConceptExtraction/embedDesUtil/baseVulDict/vulDict"
 
         if os.path.exists(os.path.join(cve_part_dir, CVE_ID)):
             with open(os.path.join(cve_part_dir, CVE_ID), "r") as f:
@@ -67,7 +67,7 @@ def extract_entity_by_parts(CVE_ID:str, CVE_description:str, CVE_CWE_dict:dict, 
             from sentence_transformers import SentenceTransformer
             vul_simi_model = SentenceTransformer(BERT_PATH)
             vul_simi_model.to("cpu")
-            stanford_nlp = StanfordCoreNLP(r'//data/alan/stanford-corenlp-4.5.7')
+            stanford_nlp = StanfordCoreNLP(r'/home/thien/vffinder_work/stanford-corenlp-4.5.7')
 
             AV,IM,RC = [], [], []
             for sentence in description_sentence_list:

@@ -1,9 +1,9 @@
 
 
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.treeBuild import tree_build
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.embedModel.deepwalkEmbed import deepwalk_embed
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.embedModel.sequenceEmbed import embed_treesequence
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.utils import convert_tree_to_networkx_with_sorted_child
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.treeBuild import tree_build
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.embedModel.deepwalkEmbed import deepwalk_embed
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.embedModel.sequenceEmbed import embed_treesequence
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.utils import convert_tree_to_networkx_with_sorted_child
 
 
 autoencoder_model = load_trained_autoencoder()
