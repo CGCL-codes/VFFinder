@@ -39,7 +39,7 @@ CVE-2017-9804,com.opensymphony.xwork2.validator.validators.URLValidator,high,get
 CVE-2017-15700,org.apache.sling.auth.core.AuthUtil,high,isRedirectValid,,1.4.0,1,src/main/java/org/apache/sling/auth/core/AuthUtil.java
 CVE-2019-25027,com.vaadin.flow.router.RouteNotFoundError,high,setErrorParameter,1.0.10|10.0.13|1.4.2|13.0.5,1.0.0|1.0.10|10.0.0|10.0.13|1.1.0|1.4.2|11.0.0|13.0.5,8,flow-server/src/main/java/com/vaadin/flow/router/RouteNotFoundError.java
 CVE-2019-10219,org.hibernate.validator.internal.constraintvalidators.hv.SafeHtmlValidator,high,pisValid,,,0,engine/src/main/java/org/hibernate/validator/internal/constraintvalidators/hv/SafeHtmlValidator.java
-CVE-2018-12972,,none,next,,2.3.0,1,src/query/expression/ExpressionIterator.java
+CVE-2018-12972,net.opentsdb.query.expression.ExpressionIterator,none,next,,2.3.0,1,src/query/expression/ExpressionIterator.java
 CVE-2018-1304,org.apache.catalina.realm.RealmBase,high,findSecurityConstraints,,9.0.0.M1|9.0.4|8.5.0|8.5.27|8.0.0.RC1|8.0.49|7.0.0|7.0.84,8,java/org/apache/catalina/realm/RealmBase.java
 CVE-2016-0763,org.apache.naming.factory.ResourceLinkFactory,high,setGlobalContext,7.0.68|8.0.31|9.0.0.M3,7.0.68|8.0.31|9.0.0.M3,3,java/org/apache/naming/factory/ResourceLinkFactory.java
 CVE-2022-22932,org.apache.karaf.obr.command.util.FileUtil,high,unjar,,4.2.15|4.3.6,2,obr/src/main/java/org/apache/karaf/obr/command/util/FileUtil.java

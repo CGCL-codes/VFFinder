@@ -15,3 +15,5 @@ __pycache__/
 resource/jarCG/
 resource/VFContentJson/
 corenlp_build/
+repro/phase1/jars/
+repro/phase1/data/maven_cache.json
