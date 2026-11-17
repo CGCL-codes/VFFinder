@@ -105,3 +105,4 @@ ro.pippo.session.SerializationSessionDataTranscoder,ro.pippo,pippo-session,
 org.apache.cxf.sts.token.validator.SAMLTokenValidator,org.apache.cxf.services.sts,cxf-services-sts-core,
 org.eclipse.rdf4j.common.io.ZipUtil,org.eclipse.rdf4j,rdf4j-util,
 net.opentsdb.query.expression.ExpressionIterator,net.opentsdb,opentsdb,2.3.0
+org.fusesource.mqtt.codec.MessageSupport,org.fusesource.mqtt-client,mqtt-client,1.14

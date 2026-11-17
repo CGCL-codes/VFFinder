@@ -1,0 +1,2 @@
+cve,method_old,method_new,reason
+CVE-2019-10219,pisValid,isValid,"Loi go/dinh chu trong ground truth goc cua repo (CVE_API ghi pisValid); ham that trong SafeHtmlValidator la isValid"

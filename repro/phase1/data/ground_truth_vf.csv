@@ -38,7 +38,7 @@ CVE-2018-8010,solr/core/src/java/org/apache/solr/util/SystemIdResolver.java,Syst
 CVE-2017-9804,xwork-core/src/main/java/com/opensymphony/xwork2/validator/validators/URLValidator.java,URLValidator,getUrlRegex,,,xwork-core/src/main/java/com/opensymphony/xwork2/validator/validators
 CVE-2017-15700,src/main/java/org/apache/sling/auth/core/AuthUtil.java,AuthUtil,isRedirectValid,"HttpServletRequest,String",,src/main/java/org/apache/sling/auth/core
 CVE-2019-25027,flow-server/src/main/java/com/vaadin/flow/router/RouteNotFoundError.java,RouteNotFoundError,setErrorParameter,"BeforeEnterEvent,ErrorParameter",,flow-server/src/main/java/com/vaadin/flow/router
-CVE-2019-10219,engine/src/main/java/org/hibernate/validator/internal/constraintvalidators/hv/SafeHtmlValidator.java,SafeHtmlValidator,pisValid,"CharSequence,ConstraintValidatorContext",,engine/src/main/java/org/hibernate/validator/internal/constraintvalidators/hv
+CVE-2019-10219,engine/src/main/java/org/hibernate/validator/internal/constraintvalidators/hv/SafeHtmlValidator.java,SafeHtmlValidator,isValid,"CharSequence,ConstraintValidatorContext",,engine/src/main/java/org/hibernate/validator/internal/constraintvalidators/hv
 CVE-2018-12972,src/query/expression/ExpressionIterator.java,ExpressionIterator,next,long,public;src/query/expression/ExpressionIterator.java:next(int),src/query/expression
 CVE-2018-1304,java/org/apache/catalina/realm/RealmBase.java,RealmBase,findSecurityConstraints,"Request,Context",,java/org/apache/catalina/realm
 CVE-2016-0763,java/org/apache/naming/factory/ResourceLinkFactory.java,ResourceLinkFactory,setGlobalContext,Context,,java/org/apache/naming/factory

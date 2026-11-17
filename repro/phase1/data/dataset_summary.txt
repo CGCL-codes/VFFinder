@@ -1,0 +1,10 @@
+=== TOM TAT BANG DU LIEU CUOI ===
+Dong VF tong (ground truth repo)       : 93  thuoc 91 CVE
+Dong VF dung duoc cho thuc nghiem      : 89  thuoc 87 CVE
+So thu vien (group:artifact) khac nhau : 68
+CVE bi loai (excluded.csv)             : ['CVE-2020-13951', 'CVE-2020-13956', 'CVE-2020-9495']
+CVE thieu mo ta (khong chay duoc VFFinder): ['CVE-2016-4436']
+VF co co 'fqcn_suy_dien'               : ['CVE-2018-12972']
+VF co phien ban dien thu cong          : 7
+Ly do chon phien ban: {'truoc moc': 50, 'moc cuoi': 24, 'phien ban': 8, 'thu cong': 7}
+So voi paper: 77 CVE / 77 VF / 75 du an / 30 CWE.
