@@ -1,11 +1,11 @@
 
 import time
 import sys
-sys.path.append("//data/alan/VFlocation/")
-sys.path.append("//data/alan/VFlocation/CVEEntityExtraction/ConceptExtractionRAG/embedDesUtil")
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.utils import parse_tree, Node, dfs, lca, find_leaves, remove_dot_nodes, cut_flag_node
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.BasicComponent import BasicComponent
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.recognize_basic_component import recognize_basic_component_online
+sys.path.append("/home/thien/vffinder_work/VFFinder/VFFinder/")
+sys.path.append("/home/thien/vffinder_work/VFFinder/VFFinder/CVEEntityExtraction/ConceptExtraction/embedDesUtil")
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.utils import parse_tree, Node, dfs, lca, find_leaves, remove_dot_nodes, cut_flag_node
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.BasicComponent import BasicComponent
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.recognize_basic_component import recognize_basic_component_online
 import os
 import hashlib
 import pickle
@@ -142,22 +142,22 @@ if __name__ == "__main__":
     from VFRanking.utils import BERT_PATH
     from sentence_transformers import SentenceTransformer
 
-    vul_dict_dir = "//data/alan/VFlocation/CVEEntityExtraction/ConceptExtractionRAG/embedDesUtil/baseVulDict/vulDict"
+    vul_dict_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/CVEEntityExtraction/ConceptExtraction/embedDesUtil/baseVulDict/vulDict"
     vul_simi_model = SentenceTransformer(BERT_PATH)
     vul_simi_model.to("cpu")
 
 
     sentence = "The SecurityTokenService (STS) in Apache CXF before 2.6.12 and 2.7.x before 2.7.9 does not properly validate SAML tokens when caching is enabled, which allows remote attackers to gain access via an invalid SAML token."
-    nlp = StanfordCoreNLP(r'//data/alan/stanford-corenlp-4.5.7')
-    description_tree = tree_build("CVE-2014-0034", sentence, nlp, "//data/alan/VFlocation/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
+    nlp = StanfordCoreNLP(r'/home/thien/vffinder_work/stanford-corenlp-4.5.7')
+    description_tree = tree_build("CVE-2014-0034", sentence, nlp, "/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
 
     draw_tree(description_tree, "candidate.png")
 
     # case1 = 'By measuring the response time for the login request, arbitrary attribute data can be retrieved from LDAP user objects.'
     # description_tree = tree_build('CVE-2021-23899', case1, nlp,
-    #                               "//data/alan/VFlocation/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
+    #                               "/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
     # draw_tree(description_tree, "case1.png")
     #
     # case2 = 'jasypt before 1.9.2 allows a timing attack against the password hash comparison.'
-    # description_tree = tree_build('CVE-2014-9970', case2, nlp, "//data/alan/VFlocation/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
+    # description_tree = tree_build('CVE-2014-9970', case2, nlp, "/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVETree/BasicComponent", vul_simi_model, vul_dict_dir)
     # draw_tree(description_tree, "case2.png")

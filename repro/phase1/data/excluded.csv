@@ -1,0 +1,4 @@
+cve,reason
+CVE-2020-13951,"Khong co jar tren Maven Central: org.apache.openmeetings chi co db/util/parent/tests, khong co openmeetings-webservice"
+CVE-2020-9495,"VF nam trong Redback (redback-users-ldap: chi co ban 2.3/2.4/2.6 tren Central) nhung advisory chi neu Archiva <2.2.5; khong tra duoc phien ban Redback tuong ung"
+CVE-2020-13956,"Ground truth goc (CloseableHttpResponse.execute) khong nhat quan: interface CloseableHttpResponse khong co ham execute; kiem tra tren sources.jar 4.5.12 khong thay 'execute('"

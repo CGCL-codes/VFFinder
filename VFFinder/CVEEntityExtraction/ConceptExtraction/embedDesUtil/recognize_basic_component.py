@@ -5,16 +5,16 @@ import sys
 sys.path.append("../../../")
 import nltk
 import hashlib
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.utils import parse_tree, Node, dfs, lca, check_gpt_basic_answer, filter_VPV_COM, regulate_gpt_output
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.basicConcRecPrompt import VPV_recognition_prompt_template, VUL_recognition_prompt_template, AGENT_recognition_prompt_template, COMP_recognition_prompt_template
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.utils import parse_tree, Node, dfs, lca, check_gpt_basic_answer, filter_VPV_COM, regulate_gpt_output
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.basicConcRecPrompt import VPV_recognition_prompt_template, VUL_recognition_prompt_template, AGENT_recognition_prompt_template, COMP_recognition_prompt_template
 from LLMRequest.ask_GPT import query_chat_gpt
-from CVEEntityExtraction.ConceptExtractionRAG.embedDesUtil.BasicComponent import BasicComponent
+from CVEEntityExtraction.ConceptExtraction.embedDesUtil.BasicComponent import BasicComponent
 import pickle
 from CommonUtils.vecUtils import cos_simialrity
 from tqdm import tqdm
 
 
-vul_dict_dir = "//data/alan/VFlocation/CVEEntityExtraction/ConceptExtractionRAG/embedDesUtil/baseVulDict/vulDict"
+vul_dict_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/CVEEntityExtraction/ConceptExtraction/embedDesUtil/baseVulDict/vulDict"
 
 def recognize_basic_component_online(description, vul_simi_model, vul_dict_dir, vul_case_num)->dict:
     '''

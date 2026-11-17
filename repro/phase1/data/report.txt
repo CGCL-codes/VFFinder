@@ -1,0 +1,16 @@
+=== BAO CAO DOI CHIEU DU LIEU ===
+Dong hop le trong CVE_API         : 93  (dong loi: 0)
+So CVE khac nhau trong CVE_API     : 91
+CVE co >1 ham VF                   : {'CVE-2018-11771': 2, 'CVE-2016-6802': 2}
+So CVE trong CVE_description       : 90
+CVE co CA mo ta LAN ground truth   : 90
+Chi co ground truth (thieu mo ta)  : ['CVE-2016-4436']
+Chi co mo ta (thieu ground truth)  : []
+So 'du an' (goi/thu vien) khac nhau: 42 (top-level package, uoc luong)
+Do dai mo ta (so tu): min=12 median=42 max=219
+Dong VF khong ghi visibility (@...)  : 69/93
+Dong VF khong co ten ham           : 0
+Mo ta nhac TEN CLASS cua VF        : 40/90 CVE (44.4%)
+Mo ta nhac TEN HAM cua VF          : 32/90 CVE (35.6%)
+
+So voi paper: 77 CVE / 77 VF / 75 du an / 30 CWE.

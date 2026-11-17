@@ -26,7 +26,7 @@ embed_mode:"treesequence",
 ##############################################################
 
 
-cve_part_dir = "//data/alan/VFlocation/resource/CVETree/CVEPart"
+cve_part_dir = "/home/thien/vffinder_work/VFFinder/VFFinder/resource/CVETree/CVEPart"
 
 def filter_done_CVE(CVE_description_dict:dict, entity_storage_dir:str)->dict:
     '''

@@ -1,0 +1,19 @@
+# Bí mật và cache
+.env
+*.key
+llm_cache.jsonl
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Dữ liệu nặng (GitHub chặn file > 100 MB)
+*.jar
+!VFFinder/lib/parseVFContent.jar
+*.npy
+*.pkl
+*.zip
+resource/jarCG/
+resource/VFContentJson/
+corenlp_build/
+repro/phase1/jars/
+repro/phase1/data/maven_cache.json
